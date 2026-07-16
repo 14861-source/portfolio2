@@ -1,38 +1,10 @@
-body{
-    background: linear-gradient(135deg,#0f172a,#1e293b);
-    color:#fff;
-}
-
-.card{
-    background: rgba(255,255,255,.08);
-    border-radius:20px;
-    padding:25px;
-    margin:20px;
-    transition:.3s;
-}
-
-.card:hover{
-    transform:translateY(-10px);
-}
-
-.profile{
-    width:220px;
-    height:220px;
-    border-radius:50%;
-    border:5px solid #38bdf8;
-}
-
-.skill-box{
-    background:#38bdf8;
-    color:black;
-    padding:15px;
-    border-radius:10px;
-    margin:10px;
-    display:inline-block;
-}
-
-.timeline-item{
-    border-left:4px solid #38bdf8;
-    padding-left:20px;
-    margin-bottom:20px;
-}
+portfolio2/
+│
+├── index.html
+├── profile.html
+├── education.html
+├── skills.html
+├── contact.html
+│
+└── css/
+    └── style.css
