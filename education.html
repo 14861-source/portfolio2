@@ -1,18 +1,46 @@
-<div class="timeline">
-
-    <div class="timeline-item">
-        <h3>ประถมศึกษา</h3>
-        <p>โรงเรียน...</p>
-    </div>
-
-    <div class="timeline-item">
-        <h3>มัธยมศึกษาตอนต้น</h3>
-        <p>โรงเรียน...</p>
-    </div>
-
-    <div class="timeline-item">
-        <h3>มัธยมศึกษาตอนปลาย</h3>
-        <p>โรงเรียน...</p>
-    </div>
-
-</div>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananda D. | Education</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Prompt:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .timeline { border-left: 2px solid var(--border-color); padding-left: 1.5rem; margin-top: 2rem; position: relative; }
+        .timeline-item { position: relative; margin-bottom: 2rem; }
+        .timeline-item::before { content: ''; position: absolute; left: calc(-1.5rem - 6px); top: 6px; width: 10px; height: 10px; border-radius: 50%; background-color: var(--accent-color); }
+        .time { font-family: 'Fira Code', monospace; color: var(--accent-color); font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">&lt;ANANDA.D /&gt;</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html" class="active">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="content-wrapper">
+            <h2 class="page-title">การศึกษา & คอร์สเรียน</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="time">2025 - ปัจจุบัน</span>
+                    <h3 style="margin-top: 0.2rem;">ศึกษาการพัฒนาเว็บแบบเรียนรู้ด้วยตัวเอง</h3>
+                    <p>มุ่งเน้นไปที่การทำเว็บไซต์แบบ Multi-page, การใช้ Git/GitHub และการศึกษา JavaScript ขั้นสูงผ่านคอร์สออนไลน์และโปรเจกต์จริง</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="time">2023 - 2024</span>
+                    <h3 style="margin-top: 0.2rem;">ระดับมัธยมศึกษาตอนปลาย</h3>
+                    <p>ศึกษาในแผนการเรียนที่เน้นวิทยาศาสตร์-คณิตศาสตร์ หรือคอมพิวเตอร์ และเข้าร่วมกิจกรรมที่เกี่ยวข้องกับเทคโนโลยีของสถานศึกษา</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer><p>&copy; 2026 Ananda Duangsin. All Rights Reserved.</p></footer>
+</body>
+</html>
