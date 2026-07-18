@@ -1,13 +1,44 @@
-<div class="card">
-
-    <h2>ช่องทางติดต่อ</h2>
-
-    <p>📧 Email : yourmail@gmail.com</p>
-
-    <p>📱 โทรศัพท์ : 08x-xxx-xxxx</p>
-
-    <p>📘 Facebook : อนันดา ดวงสิน</p>
-
-    <p>💻 GitHub : github.com/yourusername</p>
-
-</div>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananda D. | Contact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-info { margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; }
+        .contact-item { background: var(--card-bg); padding: 1.2rem; border-radius: 8px; border: 1px solid var(--border-color); text-decoration: none; color: var(--text-color); transition: all 0.3s; }
+        .contact-item:hover { border-color: var(--accent-color); background: rgba(56, 189, 248, 0.05); }
+        .contact-item strong { color: var(--accent-color); }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">&lt;ANANDA.D /&gt;</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="content-wrapper">
+            <h2 class="page-title">ช่องทางการติดต่อ</h2>
+            <p>หากคุณต้องการพูดคุยแลกเปลี่ยนไอเดีย มีโปรเจกต์งาน หรือต้องการคำแนะนำเพิ่มเติม สามารถติดต่อผมได้โดยตรงผ่านช่องทางเหล่านี้เลยครับ!</p>
+            
+            <div class="contact-info">
+                <a href="mailto:ananda.duangsin@example.com" class="contact-item">
+                    <strong>Email:</strong> ananda.duangsin@example.com (แก้ไขเป็นอีเมลจริงของคุณได้เลย)
+                </a>
+                <a href="https://github.com" target="_blank" class="contact-item">
+                    <strong>GitHub:</strong> ดูโปรเจกต์และซอร์สโค้ดเพิ่มเติมบน GitHub ของผม
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer><p>&copy; 2026 Ananda Duangsin. All Rights Reserved.</p></footer>
+</body>
+</html>
