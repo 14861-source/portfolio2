@@ -3,193 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Particles.js for Cool Background -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap');
-        body { font-family: 'Kanit', sans-serif; background-color: #0d1117; }
-        #particles-js { position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 1; pointer-events: none; }
-        .content-zone { position: relative; z-index: 10; }
-        .glass { background: rgba(22, 27, 34, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-    </style>
+    <title>Ananda D. | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Prompt:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="text-gray-200 min-h-screen flex flex-col justify-between">
-
-    <!-- ลูกเล่นที่ 1: Particles Background (พื้นหลังขยับได้) -->
-    <div id="particles-js"></div>
-
-    <div class="content-zone">
-        <!-- Navigation Bar -->
-        <nav class="glass sticky top-0 px-6 py-4 flex justify-between items-center max-w-6xl mx-auto mt-4 rounded-2xl shadow-lg m-4">
-            <a href="#" class="text-xl font-bold text-cyan-400 tracking-wider">PORTFOLIO.</a>
-            <div class="space-x-6 hidden md:flex">
-                <a href="#about" class="hover:text-cyan-400 transition">เกี่ยวกับฉัน</a>
-                <a href="#projects" class="hover:text-cyan-400 transition">ผลงาน</a>
-                <a href="#skills" class="hover:text-cyan-400 transition">ทักษะ</a>
-            </div>
-        </nav>
-
-        <!-- Hero Section -->
-        <header id="about" class="max-w-4xl mx-auto text-center py-20 px-4">
-            <!-- รูปโปรไฟล์ (สามารถเปลี่ยน URL รูปตัวเองได้ตรง src) -->
-            <div class="relative w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-4 border-cyan-400 shadow-[0_0_20px_rgba(34,211,238,0.5)]">
-                <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=300&q=80" alt="Profile" class="w-full h-full object-cover">
-            </div>
-            
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">สวัสดีครับ/ค่ะ ฉันชื่อ <span class="text-cyan-400">สมชาย ดีใจ</span></h1>
-            
-            <!-- ลูกเล่นที่ 2: Typewriter Effect (ตัวพิมพ์ดีดวิ่ง) -->
-            <p class="text-xl md:text-2xl text-gray-400 h-8">
-                ฉันเป็น <span id="typewriter" class="text-cyan-400 font-semibold border-r-2 border-cyan-400 pr-1 animate-pulse"></span>
-            </p>
-            
-            <p class="mt-6 text-gray-400 max-w-xl mx-auto">
-                ยินดีต้อนรับเข้าสู่พอร์ตโฟลิโอออนไลน์ของฉัน หน้านี้สร้างขึ้นเพื่อรวบรวมผลงาน กิจกรรม และทักษะความสามารถต่างๆ สำหรับส่งอาจารย์ครับ
-            </p>
-            
-            <div class="mt-8 space-x-4">
-                <a href="#projects" class="bg-cyan-500 hover:bg-cyan-600 text-slate-900 font-semibold px-6 py-3 rounded-xl transition shadow-lg shadow-cyan-500/20">ดูผลงานของฉัน</a>
-                <a href="https://github.com" target="_blank" class="glass hover:bg-white/5 px-6 py-3 rounded-xl transition inline-flex items-center gap-2">
-                    <i class="fab fa-github"></i> GitHub ของฉัน
-                </a>
-            </div>
-        </header>
-
-        <!-- Projects Section -->
-        <section id="projects" class="max-w-6xl mx-auto py-16 px-4">
-            <h2 class="text-3xl font-bold mb-10 text-center"><i class="fas fa-briefcase text-cyan-400 mr-2"></i> ผลงานเด่น (Projects)</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                
-                <!-- การ์ดผลงานที่ 1 -->
-                <div class="glass rounded-2xl overflow-hidden hover:-translate-y-2 transition duration-300 shadow-xl group">
-                    <div class="h-48 bg-slate-800 overflow-hidden relative">
-                        <div class="absolute inset-0 bg-cyan-500/10 group-hover:bg-transparent transition"></div>
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover" alt="Project 1">
-                    </div>
-                    <div class="p-6">
-                        <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Website</span>
-                        <h3 class="text-xl font-semibold mt-1 mb-2">โปรเจกต์เว็บส่งครู</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">พัฒนาเว็บไซต์จัดเก็บข้อมูลนักเรียนโดยใช้ HTML, CSS และ JavaScript ส่งในรายวิชาเทคโนโลยี</p>
-                    </div>
-                </div>
-
-                <!-- การ์ดผลงานที่ 2 -->
-                <div class="glass rounded-2xl overflow-hidden hover:-translate-y-2 transition duration-300 shadow-xl group">
-                    <div class="h-48 bg-slate-800 overflow-hidden relative">
-                        <div class="absolute inset-0 bg-cyan-500/10 group-hover:bg-transparent transition"></div>
-                        <img src="https://images.unsplash.com/photo-1563206767-5b18f218e8de?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover" alt="Project 2">
-                    </div>
-                    <div class="p-6">
-                        <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Mobile App</span>
-                        <h3 class="text-xl font-semibold mt-1 mb-2">แอปพลิเคชันคำนวณเกรด</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">ออกแบบและพัฒนาแอปพลิเคชันจำลองบนสมาร์ทโฟนเพื่อช่วยคิดเกรดเฉลี่ยสะสมได้อย่างแม่นยำ</p>
-                    </div>
-                </div>
-
-                <!-- การ์ดผลงานที่ 3 -->
-                <div class="glass rounded-2xl overflow-hidden hover:-translate-y-2 transition duration-300 shadow-xl group">
-                    <div class="h-48 bg-slate-800 overflow-hidden relative">
-                        <div class="absolute inset-0 bg-cyan-500/10 group-hover:bg-transparent transition"></div>
-                        <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=500&q=80" class="w-full h-full object-cover" alt="Project 3">
-                    </div>
-                    <div class="p-6">
-                        <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Design</span>
-                        <h3 class="text-xl font-semibold mt-1 mb-2">ออกแบบ UX/UI เว็บบอร์ด</h3>
-                        <p class="text-gray-400 text-sm leading-relaxed">ฝึกออกแบบหน้าจอแอปพลิเคชันและโครงสร้างเว็บไซต์ชุมชนออนไลน์ให้น่าใช้งานด้วย Figma</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="max-w-4xl mx-auto py-16 px-4 mb-10">
-            <div class="glass rounded-3xl p-8 md:p-12 shadow-2xl">
-                <h2 class="text-3xl font-bold mb-8 text-center"><i class="fas fa-code text-cyan-400 mr-2"></i> ทักษะความสามารถ (Skills)</h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-                    <div class="p-4 bg-slate-800/50 rounded-xl border border-white/5 hover:border-cyan-400/30 transition">
-                        <i class="fab fa-html5 text-4xl text-orange-500 mb-2"></i>
-                        <p class="font-medium">HTML5</p>
-                    </div>
-                    <div class="p-4 bg-slate-800/50 rounded-xl border border-white/5 hover:border-cyan-400/30 transition">
-                        <i class="fab fa-css3-alt text-4xl text-blue-500 mb-2"></i>
-                        <p class="font-medium">CSS3 / Tailwind</p>
-                    </div>
-                    <div class="p-4 bg-slate-800/50 rounded-xl border border-white/5 hover:border-cyan-400/30 transition">
-                        <i class="fab fa-js text-4xl text-yellow-500 mb-2"></i>
-                        <p class="font-medium">JavaScript</p>
-                    </div>
-                    <div class="p-4 bg-slate-800/50 rounded-xl border border-white/5 hover:border-cyan-400/30 transition">
-                        <i class="fab fa-figma text-4xl text-purple-500 mb-2"></i>
-                        <p class="font-medium">Figma Design</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <!-- Footer -->
-    <footer class="glass py-6 text-center text-sm text-gray-500 content-zone">
-        <p>© 2026 นายสมชาย ดีใจ. Created for School Project.</p>
-    </footer>
-
-    <!-- JavaScript For Effects -->
-    <script>
-        // 1. Script สำหรับ Typewriter Effect
-        const words = ["นักเรียนสายเทคโนโลยี", "ผู้ที่ชื่นชอบการเขียนโค้ด", "UX/UI Designer ฝึกหัด"];
-        let i = 0, timer;
-
-        function typingEffect() {
-            let word = words[i].split("");
-            var loopTyping = function() {
-                if (word.length > 0) {
-                    document.getElementById('typewriter').innerHTML += word.shift();
-                } else {
-                    setTimeout(deletingEffect, 2000);
-                    return false;
-                }
-                timer = setTimeout(loopTyping, 100);
-            };
-            loopTyping();
-        }
-
-        function deletingEffect() {
-            let word = words[i].split("");
-            var loopDeleting = function() {
-                if (word.length > 0) {
-                    word.pop();
-                    document.getElementById('typewriter').innerHTML = word.join("");
-                } else {
-                    if (words.length > i + 1) i++;
-                    else i = 0;
-                    setTimeout(typingEffect, 500);
-                    return false;
-                }
-                timer = setTimeout(loopDeleting, 50);
-            };
-            loopDeleting();
-        }
-        typingEffect();
-
-        // 2. Script สำหรับ Particles Background
-        particlesJS("particles-js", {
-            "particles": {
-                "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
-                "color": { "value": "#22d3ee" },
-                "shape": { "type": "circle" },
-                "opacity": { "value": 0.3, "random": true },
-                "size": { "value": 3, "random": true },
-                "line_linked": { "enable": true, "distance": 150, "color": "#22d3ee", "opacity": 0.15, "width": 1 },
-                "move": { "enable": true, "speed": 1.5, "direction": "none", "random": true, "straight": false, "out_mode": "out" }
-            },
-            "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": false }, "onclick": { "enable": false } } },
-            "retina_detect": true
-        });
-    </script>
+<body>
+    <nav>
+        <div class="logo">&lt;ANANDA.D /&gt;</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="content-wrapper">
+            <span style="font-family: 'Fira Code', monospace; color: var(--accent-color); font-size: 1.1rem;">สวัสดีครับ, ผมชื่อ</span>
+            <h1>อนันดา ดวงสิน</h1>
+            <p>นักพัฒนาซอฟต์แวร์รุ่นใหม่ อายุ 18 ปี ที่มุ่งมั่นสร้างสรรค์และออกแบบเว็บไซต์ ยินดีต้อนรับเข้าสู่พอร์ตโฟลิโอส่วนตัวของผมครับ</p>
+            <a href="profile.html" class="btn">ทำความรู้จักฉันเพิ่มขึ้น</a>
+        </div>
+    </main>
+    <footer><p>&copy; 2026 Ananda Duangsin. All Rights Reserved.</p></footer>
 </body>
 </html>
