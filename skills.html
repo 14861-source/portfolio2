@@ -1,15 +1,52 @@
-<div class="skills">
-
-    <div class="skill-box">HTML</div>
-
-    <div class="skill-box">CSS</div>
-
-    <div class="skill-box">JavaScript</div>
-
-    <div class="skill-box">Python</div>
-
-    <div class="skill-box">Canva</div>
-
-    <div class="skill-box">Microsoft Office</div>
-
-</div>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ananda D. | Skills</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Prompt:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .skill-list { list-style: none; margin-top: 1rem; }
+        .skill-list li { margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+        .skill-list li::before { content: '▹'; color: var(--accent-color); }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">&lt;ANANDA.D /&gt;</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="skills.html" class="active">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="content-wrapper">
+            <h2 class="page-title">ทักษะของฉัน (Skills)</h2>
+            <p>นี่คือเทคโนโลยีและเครื่องมือคอมพิวเตอร์ที่ผมกำลังศึกษา พัฒนา และใช้สร้างสรรค์โปรเจกต์อยู่ในปัจจุบัน</p>
+            <div class="grid">
+                <div class="card">
+                    <h3 style="color: var(--accent-color); margin-bottom: 0.5rem;">Frontend Dev</h3>
+                    <ul class="skill-list">
+                        <li>HTML5 / CSS3</li>
+                        <li>JavaScript (ES6)</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 style="color: var(--accent-color); margin-bottom: 0.5rem;">Tools & Others</h3>
+                    <ul class="skill-list">
+                        <li>Git & GitHub</li>
+                        <li>VS Code</li>
+                        <li>Command Line พื้นฐาน</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer><p>&copy; 2026 Ananda Duangsin. All Rights Reserved.</p></footer>
+</body>
+</html>
